@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AdsCollectionViewCell" id="gTV-IL-0wX" customClass="AdsCollectionViewCell" customModule="iOS_CollectionViewSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6KM-Ny-FQ0">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="200"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ads" translatesAutoresizingMaskIntoConstraints="NO" id="xpl-3Z-84q">
+                                <rect key="frame" x="0.0" y="0.0" width="350" height="200"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xpl-3Z-84q" firstAttribute="leading" secondItem="6KM-Ny-FQ0" secondAttribute="leading" id="q1z-b5-hlJ"/>
+                            <constraint firstItem="xpl-3Z-84q" firstAttribute="top" secondItem="6KM-Ny-FQ0" secondAttribute="top" id="r1l-G5-Pvy"/>
+                            <constraint firstAttribute="trailing" secondItem="xpl-3Z-84q" secondAttribute="trailing" id="rMf-Xu-ble"/>
+                            <constraint firstAttribute="bottom" secondItem="xpl-3Z-84q" secondAttribute="bottom" id="voo-iS-2Ys"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="6KM-Ny-FQ0" secondAttribute="bottom" id="6pQ-po-zNb"/>
+                <constraint firstAttribute="trailing" secondItem="6KM-Ny-FQ0" secondAttribute="trailing" id="Mku-z0-uDv"/>
+                <constraint firstItem="6KM-Ny-FQ0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hEJ-8c-LtG"/>
+                <constraint firstItem="6KM-Ny-FQ0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pvK-rU-E1I"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="350" height="200"/>
+            <connections>
+                <outlet property="ivAds" destination="xpl-3Z-84q" id="L0t-WY-OF1"/>
+            </connections>
+            <point key="canvasLocation" x="377.60000000000002" y="211.39430284857573"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ads" width="1130" height="630"/>
+    </resources>
+</document>

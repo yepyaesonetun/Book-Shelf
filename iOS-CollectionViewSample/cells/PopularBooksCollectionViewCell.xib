@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopularBooksCollectionViewCell" customModule="iOS_CollectionViewSample" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PopularBooksCollectionViewCell" id="gTV-IL-0wX" customClass="PopularBooksCollectionViewCell" customModule="iOS_CollectionViewSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="174"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="344" height="174"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9PH-6N-uRo">
+                        <rect key="frame" x="0.0" y="0.0" width="344" height="174"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular Books" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tth-o9-76X">
+                                <rect key="frame" x="8" y="16" width="93.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PXA-vC-BcC">
+                                <rect key="frame" x="8" y="43.5" width="328" height="122.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Tva-HL-lPZ">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See all" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltq-6R-z3d">
+                                <rect key="frame" x="299" y="16" width="37" height="19.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PXA-vC-BcC" firstAttribute="top" secondItem="Tth-o9-76X" secondAttribute="bottom" constant="8" id="BJC-EV-wOx"/>
+                            <constraint firstItem="ltq-6R-z3d" firstAttribute="top" secondItem="9PH-6N-uRo" secondAttribute="top" constant="16" id="FKP-fM-5Oh"/>
+                            <constraint firstAttribute="trailing" secondItem="ltq-6R-z3d" secondAttribute="trailing" constant="8" id="GIG-6e-SMz"/>
+                            <constraint firstAttribute="trailing" secondItem="PXA-vC-BcC" secondAttribute="trailing" constant="8" id="GWO-xO-adp"/>
+                            <constraint firstItem="Tth-o9-76X" firstAttribute="top" secondItem="9PH-6N-uRo" secondAttribute="top" constant="16" id="R5a-Hi-6xY"/>
+                            <constraint firstAttribute="bottom" secondItem="PXA-vC-BcC" secondAttribute="bottom" constant="8" id="UL6-MT-0QD"/>
+                            <constraint firstItem="PXA-vC-BcC" firstAttribute="top" secondItem="ltq-6R-z3d" secondAttribute="bottom" constant="8" id="URi-6y-tIW"/>
+                            <constraint firstItem="Tth-o9-76X" firstAttribute="leading" secondItem="9PH-6N-uRo" secondAttribute="leading" constant="8" id="ZF9-JU-i03"/>
+                            <constraint firstItem="PXA-vC-BcC" firstAttribute="leading" secondItem="9PH-6N-uRo" secondAttribute="leading" constant="8" id="bsX-s5-08l"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="9PH-6N-uRo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="JRL-Te-3lT"/>
+                <constraint firstAttribute="bottom" secondItem="9PH-6N-uRo" secondAttribute="bottom" id="V31-8v-a7t"/>
+                <constraint firstAttribute="trailing" secondItem="9PH-6N-uRo" secondAttribute="trailing" id="mgw-fR-MSf"/>
+                <constraint firstItem="9PH-6N-uRo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rUA-hb-e1e"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="344" height="174"/>
+            <connections>
+                <outlet property="lblSeemore" destination="ltq-6R-z3d" id="aZr-oS-Be0"/>
+                <outlet property="popularCollectionView" destination="PXA-vC-BcC" id="d8I-hL-p8u"/>
+            </connections>
+            <point key="canvasLocation" x="372.80000000000001" y="197.00149925037482"/>
+        </collectionViewCell>
+    </objects>
+</document>

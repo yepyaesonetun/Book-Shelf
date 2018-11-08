@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BookCollectionViewCell" id="gTV-IL-0wX" customClass="BookCollectionViewCell" customModule="iOS_CollectionViewSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="118" height="219"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="118" height="219"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iz9-DS-rhE">
+                        <rect key="frame" x="0.0" y="0.0" width="118" height="219"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="forever_evil" translatesAutoresizingMaskIntoConstraints="NO" id="QbM-JX-dHG">
+                                <rect key="frame" x="0.0" y="0.0" width="118" height="183.5"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forever Evil #52" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdy-jg-hT2">
+                                <rect key="frame" x="0.0" y="191.5" width="118" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="QbM-JX-dHG" secondAttribute="trailing" id="3tI-v3-ys7"/>
+                            <constraint firstAttribute="trailing" secondItem="Wdy-jg-hT2" secondAttribute="trailing" id="4ZV-I2-Pvz"/>
+                            <constraint firstItem="Wdy-jg-hT2" firstAttribute="top" secondItem="QbM-JX-dHG" secondAttribute="bottom" constant="8" id="Ksf-7Q-spl"/>
+                            <constraint firstAttribute="bottom" secondItem="Wdy-jg-hT2" secondAttribute="bottom" constant="8" id="N2D-o0-Avz"/>
+                            <constraint firstItem="Wdy-jg-hT2" firstAttribute="leading" secondItem="iz9-DS-rhE" secondAttribute="leading" id="sXT-j2-JCB"/>
+                            <constraint firstItem="QbM-JX-dHG" firstAttribute="top" secondItem="iz9-DS-rhE" secondAttribute="top" id="t99-85-MtE"/>
+                            <constraint firstItem="QbM-JX-dHG" firstAttribute="leading" secondItem="iz9-DS-rhE" secondAttribute="leading" id="x80-ZA-eoo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iz9-DS-rhE" secondAttribute="trailing" id="1Ao-kp-xU3"/>
+                <constraint firstItem="iz9-DS-rhE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="GPR-3t-mhE"/>
+                <constraint firstAttribute="bottom" secondItem="iz9-DS-rhE" secondAttribute="bottom" id="XbB-c5-T6U"/>
+                <constraint firstItem="iz9-DS-rhE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="a50-Ir-gDH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="118" height="219"/>
+            <connections>
+                <outlet property="ivBook" destination="QbM-JX-dHG" id="7Gg-hl-iCg"/>
+                <outlet property="lblBookTitle" destination="Wdy-jg-hT2" id="Mmh-fa-u5X"/>
+            </connections>
+            <point key="canvasLocation" x="192" y="204.64767616191907"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="forever_evil" width="120" height="184.19999694824219"/>
+    </resources>
+</document>
